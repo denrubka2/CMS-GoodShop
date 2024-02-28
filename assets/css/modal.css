@@ -1,0 +1,17 @@
+.modal__content {
+  position: relative;
+  max-width: 792px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 106px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+  background: #f2f0f9;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  color: #6E6893;
+}

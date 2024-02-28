@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Проект CMS-GoodShop</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
-  <table border="1">
+  <table class="table" border="1">
     <thead>
       <tr>
         <th>ID</th>
@@ -39,5 +40,49 @@
       </tr>
     </tbody>
   </table>
+
+  <div class="modal">
+    <div class="modal__overlay">
+      <div class="modal__content">
+        <form class="form form-product">
+          <legend class="form-product__title">Добавить товар</legend>
+          <fieldset class="form__group">
+            <label class="form-product__label" for="product-name">Наименование</label>
+            <input class="form-product__input" id="product-name" name="product-name" type="text">
+
+            <label class="form-product__label" for="product-category">Категория</label>
+            <input class="form-product__input" id="product-category" name="product-category" type="text">
+
+            <label class="form-product__label" for="product-units">Единицы измерения</label>
+            <input class="form-product__input" id="product-units" name="product-units" type="text">
+
+            <label class="form-product__label" for="product-discount">Дисконт</label>
+            <div class="form__checkbox">
+              <input class="form__checkbox-input" type="checkbox">
+              <input class="form__checkbox-field" id="product-discount" name="product-discount" type="text">
+            </div>
+
+            <label class="form-product__label" for="product-description">Описание</label>
+            <textarea class="form-product__input form-product__textarea" name="product-description" id="product-description"></textarea>
+
+            <label class="form-product__label" for="product-quantity">Количество</label>
+            <input class="form-product__input" id="product-quantity" name="product-quantity" type="text">
+
+            <label class="form-product__label" for="product-price">Цена</label>
+            <input class="form-product__input" id="product-price" name="product-price" type="text">
+          </fieldset>
+          
+          <button class="form__submit" type="submit">Добавить товар</button>
+        </form>
+
+        <div class="modal__close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L22 22" stroke="CurrentColor" stroke-width="3" stroke-linecap="round" />
+            <path d="M2 22L22 2" stroke="CurrentColor" stroke-width="3" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

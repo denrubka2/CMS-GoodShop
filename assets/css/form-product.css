@@ -1,0 +1,43 @@
+.form-product__title {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6e6893;
+  margin-bottom: 43px;
+}
+
+.form-product__label {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6e6893;
+  margin-bottom: 5px;
+}
+
+.form-product__input {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  background: #f4f2ff;
+  border-radius: 6px;
+  border: none;
+  padding: 11px;
+  outline: none;
+}
+
+.form-product__input:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+.form-product__checkbox {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.form-product__textarea {
+  resize: none;
+  min-height: 112px;
+  margin-bottom: 12px;
+}
